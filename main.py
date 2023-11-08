@@ -3,18 +3,18 @@ import sys
 import random
 import os
 
+# Constants
 WIDTH, HEIGHT = 1280, 720
 CIRCLE_RADIUS = 28
 CIRCLE_SPEED = 13
 ARROW_LENGTH = 100
 ARROW_SPEED = 14
-SPAWN_PROBABILITY = 0.185                   
+SPAWN_PROBABILITY = 0.185
 
+# Initialize Pygame
 pygame.init()
 
-restart_button = pygame.image.load("restart.png")
-restart_button = pygame.transform.scale(restart_button, (100, 50))  # Adjust the dimensions as needed
-
+# Load images and set up the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("My First Pygame Project")
 
@@ -27,17 +27,17 @@ player_image = pygame.transform.scale(player_image, (2 * CIRCLE_RADIUS, 2 * CIRC
 arrow_image = pygame.image.load("arrow.png")
 arrow_image = pygame.transform.scale(arrow_image, (ARROW_LENGTH, ARROW_LENGTH))
 
-'''restart_button = pygame.image.load("restart.png")
-restart_button = pygame.transform.scale(restart_button  , (WIDTH /2))
-'''
+# Sound
 sound = pygame.mixer.Sound('gayyyy_sound.mp3')
-sound.set_volume(1)  
+sound.set_volume(1)
 
+# Classes
 class Circle:
     def __init__(self):
         self.x = WIDTH // 2
         self.y = HEIGHT // 2
         self.hitbox = pygame.Rect(self.x - CIRCLE_RADIUS, self.y - CIRCLE_RADIUS, 2 * CIRCLE_RADIUS, 2 * CIRCLE_RADIUS)
+
     def move(self, keys):
         if keys[pygame.K_a] and self.x > CIRCLE_RADIUS:
             self.x -= CIRCLE_SPEED
@@ -47,11 +47,10 @@ class Circle:
             self.y -= CIRCLE_SPEED
         if keys[pygame.K_s] and self.y < HEIGHT - CIRCLE_RADIUS:
             self.y += CIRCLE_SPEED
-        # Update the hitbox position
         self.hitbox.topleft = (self.x - CIRCLE_RADIUS, self.y - CIRCLE_RADIUS)
+
     def draw(self):
         screen.blit(player_image, (self.x - CIRCLE_RADIUS, self.y - CIRCLE_RADIUS))
-player_circle = Circle()
 
 class Arrow:
     def __init__(self):
@@ -61,11 +60,14 @@ class Arrow:
         self.image_rect = self.image.get_rect()
         self.image_rect.topleft = (self.x, self.y - self.image_rect.height // 2)
         self.colliding = False
+
     def move(self):
         self.x += ARROW_SPEED
         self.image_rect.topleft = (self.x, self.y - self.image_rect.height // 2)
+
     def draw(self):
         screen.blit(self.image, self.image_rect)
+
     def check_collision(self, circle):
         if self.colliding:
             return False
@@ -74,10 +76,11 @@ class Arrow:
         if distance < (CIRCLE_RADIUS + ARROW_LENGTH / 2):
             self.colliding = True
             return True
-        else:
-            return False
-arrows = []
+        return False
 
+# Initialize game variables
+player_circle = Circle()
+arrows = []
 game_over = False
 score = 0
 high_score = 0
@@ -88,7 +91,6 @@ if os.path.isfile("highscore.txt"):
         high_score = int(file.read())
 
 options_menu = False
-
 running = True
 clock = pygame.time.Clock()
 
@@ -157,7 +159,6 @@ while running:
         text = font.render("YOU LOSE", True, (255, 0, 0))
         screen.blit(text, (WIDTH // 2 - text.get_width() // 2, HEIGHT // 2 - text.get_height() // 2))
         sound.play()
-        
         pygame.display.flip()
 
         with open("highscore.txt", "w") as file:
@@ -172,7 +173,7 @@ while running:
                     if event.key == pygame.K_ESCAPE:
                         options_menu = not options_menu
                     elif options_menu and event.key == pygame.K_r:
-                        options_menu = Falsed
+                        options_menu = False
                         game_over = False
                         arrows = []
                         start_time = pygame.time.get_ticks()
