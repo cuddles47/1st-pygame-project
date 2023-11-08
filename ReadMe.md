@@ -5,14 +5,17 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)
 
 
 
 Aeroblasters is a simple 2d vertical plane shooter game made using python and pygame. The game can  be run both on pc or android using pydroid3.
 
 <p align='center'>
-  <img src='app.png' width=200 height=300>
+ <img src='app.png' width=200 height=300>
 </p>
+
 
 ## How to Download
 
