@@ -6,7 +6,7 @@
 $ickDuck is a simple 2d vertical Arcade Survival and Avoidance Game made using python and pygame. The game can  be run both on pc or android using pydroid3.
 
 <p align='center'>
-  <img src='app.png' width=200 height=300>
+  <img src='app.png' width=400 height=300>
 </p>
 
 ## How to Download
