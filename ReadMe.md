@@ -11,7 +11,7 @@ $ickDuck is a simple 2d vertical Arcade Survival and Avoidance Game made using p
 
 ## How to Download
 
-Download this project from here [Download Aeroblasters](!)
+Download this project from here [Download $ickDuck](!)
 
 
 ## Requirements
