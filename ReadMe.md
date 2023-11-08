@@ -1,22 +1,18 @@
-# Aeroblasters
+# $ickDuck
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
-Aeroblasters is a simple 2d vertical plane shooter game made using python and pygame. The game can  be run both on pc or android using pydroid3.
+
+$ickDuck is a simple 2d vertical Arcade Survival and Avoidance Game made using python and pygame. The game can  be run both on pc or android using pydroid3.
 
 <p align='center'>
- <img src='app.png' width=200 height=300>
+  <img src='app.png' width=200 height=300>
 </p>
-
 
 ## How to Download
 
-Download this project from here [Download Aeroblasters](https://downgit.github.io/#/home?url=https://github.com/pyGuru123/Python-Games/tree/master/Aeroblasters)
+Download this project from here [Download Aeroblasters](!)
+
 
 ## Requirements
 
