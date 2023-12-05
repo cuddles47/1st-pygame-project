@@ -40,6 +40,8 @@ When playing with mouse or on pydroid3
 * Press right half of game window to go right
 * Click on player plane to shoot
 
+Max volumn for better experience, enjoy bitches!
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
